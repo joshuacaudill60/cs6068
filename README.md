@@ -1,2 +1,2 @@
-# cs6033
+# cs6068
 Parallel Computing

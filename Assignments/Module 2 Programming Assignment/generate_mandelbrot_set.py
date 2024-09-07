@@ -5,9 +5,10 @@ Starter code for the fast generation of the Mandelbrot Set.
 import time
 
 import numpy as np
+from numba import jit
 from pylab import imshow, show
 
-
+@jit(nopython=True)
 def mandel(x, y, max_iters):
     """
     Computes the behavior of '0' under max_iters iterations for the value c.
@@ -25,7 +26,7 @@ def mandel(x, y, max_iters):
 
     return max_iters  # Return max_iters otherwise.
 
-
+@jit(nopython=True)
 def create_fractal(min_x, max_x, min_y, max_y, img, iters):
     """
     The Mandelbrot Set is a fractal. Create the fractal.

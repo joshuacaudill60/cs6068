@@ -45,7 +45,7 @@ def create_fractal(min_x, max_x, min_y, max_y, img, iters):
         for y in range(height):
             imag = min_y + y * pixel_size_y
             color = mandel(real, imag, iters)
-            img[y, x] = color # Assign a color to the image.
+            img[y, x] = color  # Assign a color to the image.
 
 
 if __name__ == "__main__":
@@ -55,4 +55,4 @@ if __name__ == "__main__":
     end = time.time()  # Get the end time.
     print(f"Elapsed = {(end - start)}")  # Print the elapsed time.
     imshow(image)
-    show() # Show the Mandelbrot Set.
+    show()  # Show the Mandelbrot Set.

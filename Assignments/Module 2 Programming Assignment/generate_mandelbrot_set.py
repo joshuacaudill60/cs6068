@@ -8,6 +8,7 @@ import numpy as np
 from numba import jit
 from pylab import imshow, show
 
+
 @jit(nopython=True)
 def mandel(x, y, max_iters):
     """
@@ -25,6 +26,7 @@ def mandel(x, y, max_iters):
             return i
 
     return max_iters  # Return max_iters otherwise.
+
 
 @jit(nopython=True)
 def create_fractal(min_x, max_x, min_y, max_y, img, iters):

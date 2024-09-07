@@ -1,4 +1,3 @@
-#!/usr/local/env python3
 """
 Starter code for the fast generation of the Mandelbrot Set.
 """

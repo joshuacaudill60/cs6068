@@ -17,8 +17,8 @@ data
 
 doc
 
-- Module 2 Programming Assignment.docx
-- Module 2 Programming Assignment.pdf
+- Assignment #2.docx
+- Assignment #2.pdf
 
 src
 

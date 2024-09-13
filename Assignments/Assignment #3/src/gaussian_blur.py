@@ -66,3 +66,4 @@ if __name__ == "__main__":
     axes.set_title("After")
     img2 = Image.fromarray(imgblur)
     img2.save("blurred.jpg")
+    plt.show()

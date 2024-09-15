@@ -27,7 +27,7 @@ def generate_kernel():
 
 
 @jit(nopython=True)
-def blurfilter(in_img, out_img, k):
+def blur(in_img, out_img, k):
     """
     Applies the Gaussian kernel to the noisy image and saves the resulting image.
     """
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     imgblur = img.copy()  # Save a copy of the noisy image.
     start = time.time()  # Get the start time.
     kernel = generate_kernel()  # Generate the kernel.
-    blurfilter(img, imgblur, kernel)  # Blur the image.
+    blur(img, imgblur, kernel)  # Blur the image.
     end = time.time()  # Get the end time.
     print(f"Elapsed = {(end - start)}")  # Print the elapsed time.
 

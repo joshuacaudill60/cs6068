@@ -1,0 +1,12 @@
+[caudilj5@p0306 ~]$ ./a.out
+transpose_serial: 51.9104 ms.
+Verifying ...Success
+transpose_parallel_per_row: 1.72272 ms.
+Verifying ...Success
+speedup: 30.133
+transpose_parallel_per_element_tiled 16x16: 0.0296 ms.
+Verifying ...Success
+speedup: 1753.729
+transpose_parallel_per_element_tiled_shared 16x16: 0.016416 ms.
+Verifying ...Success
+speedup: 3162.181
